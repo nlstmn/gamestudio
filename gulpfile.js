@@ -23,14 +23,13 @@
  *
  */
 
+const cfg = require('./gulp-config.js');
+const gulp = require('gulp');
+const del = require('del');
+const path = require('path');
+const browserSync = require('browser-sync').create();
 (() => {
   'use strict';
-
-  const cfg = require('./gulp-config.js');
-  const gulp = require('gulp');
-  const del = require('del');
-  const path = require('path');
-  const browserSync = require('browser-sync').create();
 
   /**
    * Require gulp task from file
